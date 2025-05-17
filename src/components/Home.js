@@ -36,12 +36,12 @@ function Home() {
           </div>
 
           <div className="feature-item">
-            <h3>Seamless Swapping</h3>
+            <h3> 🔁 Seamless Swapping</h3>
             <p>Swap DPS with other tokens instantly and securely using our easy-to-use platform.</p>
           </div>
 
           <div className="feature-item">
-            <h3>Community Driven</h3>
+            <h3> 🤝 Community Driven</h3>
             <p>Governed by its users, DPS thrives through active community ideas and decisions.</p>
           </div>
         </div>
@@ -50,17 +50,17 @@ function Home() {
       <section className="feature">
         <div className="feature-list">
           <div className="feature-item">
-            <h3>Low Transaction Fees</h3>
+            <h3>💱 Low Transaction Fees</h3>
             <p>Experience quick and cost-effective transactions thanks to the power of TON blockchain.</p>
           </div>
 
           <div className="feature-item">
-            <h3>Real-Time Analytics</h3>
+            <h3>📈 Real-Time Analytics</h3>
             <p>Use detailed real-time metrics to track your staking performance and token balance.</p>
           </div>
 
           <div className="feature-item">
-            <h3>Cross-Chain Support</h3>
+            <h3> 🎌 Cross-Chain Support</h3>
             <p>Connect your wallet to multiple blockchains and explore more powerful DeFi options.</p>
           </div>
         </div>
