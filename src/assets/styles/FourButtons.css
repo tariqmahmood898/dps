@@ -72,9 +72,9 @@
   }
 
   .btn {
-    width: 90%;
+    width: auto%;
     font-size: 0.80rem;
-    padding: 6px 7px;
-    margin: 5px 0;
+    padding: 2px 1px;
+    margin: 1px 1px;
   }
 }
