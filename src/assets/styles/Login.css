@@ -1,0 +1,143 @@
+/* Compare this snippet from dps-website/src/assets/styles/Login.css: */
+.login-container {
+  padding: 10px;
+  color: black;
+}
+
+.login-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+}
+
+.login-image {
+  margin-right: 40px;
+  margin-left: 40px;
+  
+}
+
+.login-text {
+  max-width: 600px;
+  color: #f3c80a;
+  
+}
+
+.login-text h1 {
+  font-size: 1.5em;
+  padding: 10px ;
+  margin-bottom: 15px;
+  background: linear-gradient(to right, #9e139375, #0a0ef359);
+  box-shadow: 5px 9px 18px rgb(255 6 229 / 65%);
+}
+
+.login-text p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #eee;
+  
+}
+
+.cnt-card {
+  flex: 1;
+  padding: 30px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.left-card {
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* spacing between boxes */
+}
+
+.box {
+  flex: 1 1 22%; /* 4 boxes per row on desktop */
+  min-width: 150px;
+  background: #a352adab;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+/* Mobile-only styles for Login Page */
+
+/* For screens <= 768px */
+@media screen and (max-width: 768px) {
+  .login-section {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .login-image {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+
+  .login-text {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .login-text h1 {
+    font-size: 1.3em;
+    padding: 8px;
+  }
+
+  .login-text p {
+    font-size: 1em;
+  }
+
+  .cnt-card {
+    padding: 20px;
+  }
+
+  .left-card {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .row {
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .box {
+    flex: 1 1 45%;
+    min-width: 130px;
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+/* For screens <= 400px */
+@media screen and (max-width: 400px) {
+  .login-text h1 {
+    font-size: 1.1em;
+    padding: 6px;
+  }
+
+  .login-text p {
+    font-size: 0.95em;
+    line-height: 1.4;
+  }
+
+  .cnt-card {
+    padding: 15px;
+  }
+
+  .box {
+    flex: 1 1 100%;
+    min-width: 100px;
+    font-size: 13px;
+  }
+}
+

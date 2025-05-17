@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: 'Cambria', Tahoma, Geneva, sans-serif;
+  background-size: 100%;
+  color: rgb(1, 11, 20);
+  transform-origin: bottom;
+  background: linear-gradient(130deg, rgba(20, 10, 14, 0.957), rgba(102, 28, 112, 0.342), rgba(73, 7, 94, 0.411));
+  overflow: scroll ;
+  position: relative;
+}
+
+/* Floating diamond shape */
+.diamond {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: rgba(12, 197, 58, 0.89);
+  transform: rotate(45deg);
+  bottom: 10px;
+  left: 20%;
+  animation: floatUp 35s linear infinite;
+}
+
+.diamond2 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: rgba(167, 9, 240, 0.89);
+  transform: rotate(75deg);
+  clip-path: diamond2(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  bottom: 20px;
+  left: 30%;
+  animation: floatUp 30s linear infinite;
+}
+
+/* Floating polygon shape (hexagon-ish) */
+.polygon {
+  position: absolute;
+  width: 60px;
+  height: 34px;
+  background: rgba(211, 6, 6, 0.842);
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  bottom: -10px;
+  left: 70%;
+  animation: floatUp 18s ease-in-out infinite;
+}
+
+@keyframes floatUp {
+  10% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}

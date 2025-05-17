@@ -1,0 +1,172 @@
+.swaping-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 20px;
+  min-height: 100vh;
+  gap: 20px;
+  color: #fff;
+}
+
+.swaping-info {
+  flex: 1;
+  max-width: 500px;
+  
+}
+
+.swaping-info h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.swaping-info p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.info-sw {
+  background-color: #03051b73;
+  transition: 0.3s;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 40px rgba(243, 3, 211, 0.959);
+}
+
+.swap-card {
+  flex: 1;
+  height: fit-content;  
+  
+  max-width: 420px;
+  background-color:#03051b73;
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(43, 6, 104, 0.6);
+}
+
+.highlight {
+  color: #f44336;
+  font-weight: bold;
+}
+
+.stage {
+  color: #ffcc00;
+}
+
+.progress-bar {
+  height: 12px;
+  background: #ccc;
+  border-radius: 8px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.filled {
+  height: 100%;
+  background: #00ff99;
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+}
+
+.status {
+  font-size: 0.9rem;
+  margin: 4px 0 16px;
+}
+
+.payment-options {
+  display: flex;
+  justify-content: space-around;
+  margin: 16px 0;
+}
+
+.option {
+  background: #333;
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: 0.3s;
+}
+
+.option.selected {
+  background: #ffcc00;
+  color: black;
+  font-weight: bold;
+}
+
+.input-group {
+  text-align: left;
+  margin: 5px 0;
+  width: 90%;
+}
+
+.input-group label {
+  
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #c9c9e9;
+  color: white;
+  outline: none;
+}
+
+.connect-wallet {
+  margin: 10px;
+  width: 70%;
+  padding: 12px;
+  background: linear-gradient(90deg, #ff5f6d, #ffc371);
+  border: none;
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.connect-wallet:hover {
+  opacity: 0.9;
+}
+
+.info-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.info-buttons button {
+  flex: 1;
+  padding: 8px;
+  background: #444;
+  border: none;
+  color: white;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.info-buttons button:hover {
+  background: #555;
+}
+
+@media (max-width: 768px) {
+  .swaping-page {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .swaping-info,
+  .swap-card {
+    max-width: 100%;
+  }
+}

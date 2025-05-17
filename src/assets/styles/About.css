@@ -1,0 +1,260 @@
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  color: #f0f0f0;
+
+}
+
+.about-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.about-description {
+  font-size: 18px;
+  background-color: #244b4738;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(191, 209, 203, 0.2);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Card Section */
+.supply-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.card {
+  background-color: rgba(71, 41, 41, 0.473);
+  border-radius: 10px;
+  padding: 15px;
+  width: 300px;
+  margin: 8px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  font-size: 20px;
+  color: #ffb347;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #dddddd;
+}
+
+/* Grid Highlights */
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.grid-card {
+  background-color: #2f2f42;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+.grid-card:hover {
+  transform: translateY(-4px);
+}
+
+.grid-card h3 {
+  margin: 10px 0 8px;
+  color: #ffce54;
+}
+
+.grid-card p {
+  color: #ccc;
+}
+
+/* Whitepaper */
+.whitepaper-section {
+  background-color: #242435;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.whitepaper-section h2 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.whitepaper-section p {
+  color: #bbbbbb;
+  margin-bottom: 20px;
+}
+
+.download-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ffb347;
+  color: #1e1e2f;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.download-link:hover {
+  background: #ffa534;
+}
+
+/* FAQ Section */
+.faq-section {
+  margin-bottom: 30px;
+}
+
+.faq-card {
+  background-color: #2a2a3c;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: background-color 0.2s ease;
+}
+
+.faq-card:hover {
+  background-color: #33334d;
+}
+
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f9f9f9;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  color: #cccccc;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* Social Media */
+.social-section {
+  text-align: center;
+}
+
+.social-section h2 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #ffb347;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ffffff;
+}
+
+/* Responsive for max-width: 768px */
+@media screen and (max-width: 768px) {
+  .about-title {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  .about-description {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .card {
+    width: 90%;
+    padding: 12px;
+    margin: 10px auto;
+  }
+
+  .grid-section {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+  }
+
+  .whitepaper-section {
+    padding: 20px;
+  }
+
+  .faq-card {
+    padding: 8px;
+  }
+
+  .faq-answer {
+    font-size: 14px;
+  }
+}
+
+/* Responsive for max-width: 400px */
+@media screen and (max-width: 400px) {
+  .about-container {
+    padding: 20px 10px;
+  }
+
+  .about-title {
+    font-size: 22px;
+    letter-spacing: 0.5px;
+  }
+
+  .about-description {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .card h2 {
+    font-size: 18px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .grid-card h3 {
+    font-size: 16px;
+  }
+
+  .grid-card p {
+    font-size: 13px;
+  }
+
+  .download-link {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .faq-answer {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .social-icons a {
+    margin: 0 6px;
+    font-size: 18px;
+  }
+}

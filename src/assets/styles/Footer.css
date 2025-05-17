@@ -1,0 +1,30 @@
+/* Footer.css - Mobile First Design */
+.footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 12px 10px;
+  font-size: 13px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-top: 1px solid #444;
+  word-wrap: break-word;
+}
+
+.footer-content p {
+  margin: 4px 0;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+/* Responsive adjustments for very small devices */
+@media screen and (max-width: 768px) {
+  .footer {
+    font-size: 12px;
+    padding: 10px 8px;
+  }
+
+  .footer-content p {
+    margin: 3px 0;
+    line-height: 1.3;
+  }
+}

@@ -1,0 +1,74 @@
+/* Global Box Sizing */
+* {
+  box-sizing: border-box;
+}
+
+.ston-container {
+  padding: 10px;
+}
+
+.ston-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  gap: 20px;
+}
+
+.ston-card img {
+  max-width: 100%;
+  height: auto;
+  width: 400px;
+  max-height: 400px;
+  margin-left: 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.ston-card h1 {
+  font-size: 2em;
+  padding: 10px;
+  margin-bottom: 15px;
+  background: linear-gradient(to right, #9e139375, #0a0ef359);
+  box-shadow: 5px 9px 18px rgb(255 6 229 / 65%);
+  color: #fff;
+  border-radius: 8px;
+}
+
+.ston-card p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #eee;
+  max-width: 600px;
+}
+
+.content-area {
+  width: auto;
+  background-color: #eee;
+
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .ston-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .ston-card img {
+    width: 90%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .ston-card h1 {
+    font-size: 1.6em;
+  }
+
+  .ston-card p {
+    font-size: 1em;
+    padding: 0 10px;
+  }
+}

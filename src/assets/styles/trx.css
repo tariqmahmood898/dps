@@ -1,0 +1,108 @@
+.trx-container {
+  padding: 10px;
+  color: #f1f5f9;
+
+  min-height: 100vh;
+}
+
+.trx-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #22d3ee;
+}
+
+.trx-search {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 15px;
+  margin: 0 auto 20px;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background-color: #1e293b;
+  color: #f8fafc;
+  font-size: 16px;
+}
+
+.trx-sort-options {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.trx-sort-options button {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  color: #cbd5e1;
+  padding: 8px 12px;
+  margin: 0 5px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.trx-sort-options .active {
+  background-color: #22d3ee;
+  color: #0f172a;
+  font-weight: bold;
+}
+
+.trx-table-wrapper {
+  overflow-x: auto;
+}
+
+.trx-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1e293b;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.trx-table th,
+.trx-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #334155;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.trx-table th {
+  background-color: #0f172a;
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+.trx-table tr:hover {
+  background-color: #334155;
+}
+
+.trx-empty {
+  text-align: center;
+  padding: 20px;
+  color: #94a3b8;
+}
+
+/* ✅ Highlight searched result row */
+.trx-highlight {
+  background-color: #0ea5e9 !important;
+  color: #0f172a;
+  font-weight: bold;
+}
+
+/* ✅ Form-style card for matched result */
+.trx-card {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #f1f5f9;
+  box-shadow: 0 0 10px rgba(34, 211, 238, 0.3);
+}
+
+.trx-card h3 {
+  color: #22d3ee;
+  margin-bottom: 15px;
+}
